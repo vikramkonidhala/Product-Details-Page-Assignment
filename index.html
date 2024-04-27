@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Product Details Page</title>
+    <script src="https://kit.fontawesome.com/6e3601a65e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+   
+    <div class="app">
+        <div class="images-section">
+            <img class="banner-img" id="bannerImage" src="https://shorturl.at/mzRZ1"/>
+            <div id="images-section2">
+                <img class="img2" src="https://shorturl.at/mzRZ1" onclick="changeImage(event)"/>
+                <img class="img2" src="https://shorturl.at/giGKZ" onclick="changeImage(event)"/>
+                <img class="img2" src="https://shorturl.at/bdFL5" onclick="changeImage(event)"/>
+                <img class="img2" src="https://shorturl.at/anyzG" onclick="changeImage(event)"/>
+            </div>
+        </div>
+        <div class="right-section">
+            <div id="headings-section">
+                <p id="vendor"></p>
+                <h2 id="title"></h2>
+            </div>
+            <hr/>
+            <div id="price-section">
+                <div class="price-top">
+                    <h1 id="price"></h1>
+                    <h2 id="discount"></h2>
+                </div>
+                <div class="price-bottom">
+                    <h2 id="comparison-price"></h2>
+                </div>
+            </div>
+            <hr/>
+            <div id="color-section">
+                <p>Choose a Color</p>
+
+            </div>
+            <hr/>
+            <div id="size">
+                <p>Choose a Size</p>
+                <div id="size-section"></div>
+            </div>
+            <div class="checkout-section">
+                <div id="left">
+                    <button type="button" id="minus-button" >-</button>
+                    <h1 id="count"></h1>
+                    <button type="button" id="plus-button" >+</button>
+                </div>
+                <button type="button" id="cart">
+                    <i class="fa icon fa-bag-shopping"></i>
+                    <p class="caa">Add To Cart</p>
+                </button>
+                
+            </div>
+            
+            <p id="message"></p>
+            
+            <hr/>
+            <div id="description"></div>
+        </div>
+    </div>
+   
+    <script src="./script.js"></script>
+</body>
+
+</html>

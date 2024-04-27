@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+@import url("https://fonts.google.com/specimen/Inter");
+html,
+body {
+  min-height: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 20px;
+}
+
+.app{
+  padding: 10px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media(min-width: 768px){
+  .app{
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.banner-img{
+  width: 400px;
+  height: 500px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.images-section{
+  display: flex;
+  flex-direction: column;
+  width:400px;
+}
+
+
+#images-section2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width:400px;
+}
+
+.img2{
+  height:80px;
+  width:80px;
+  border-radius:10px
+}
+
+.price-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.price-top{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#price{
+  color:#3A4980;
+  margin-right:15px
+}
+
+#size-section{
+  display: flex;
+  flex-wrap: wrap;
+  color:#726C6C
+}
+
+#discount{
+  color:rgb(255,0,0,0.5);
+  font-size: 18px;
+}
+
+#comparison-price{
+  color:rgb(0,0,0,0.5);
+  text-decoration: line-through;margin-top:0;
+}
+
+.checkout-section{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin:20px;
+}
+
+#left{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F3F3F3;
+  border-radius: 30px;
+  margin-right:30px;
+  width:15vw;
+  margin-top:20px;
+  color:#3A4980;
+  height:8vh;
+}
+
+button{
+  background-color: transparent;
+  cursor:pointer;
+  border:none;
+  font-size:16px
+}
+
+#message{
+  display:none;
+  padding:10px;
+  margin:20px;
+  color:black;
+  text-align: center;
+  background-color: #E7F8B7;
+  border-radius: 20px;
+}
+
+.color{
+  width:60px;
+  height:50px;
+  cursor: pointer;
+}
+
+hr{
+  color:#E4E4E4;
+}
+
+#add-to-cart{
+  color:white
+}
+
+.caa{
+  color:white;
+}
+
+#cart{
+  background-color: #3A4980;
+  border-radius: 30px;
+  margin-top:20px;
+  height:8vh;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  width:30vw;
+}
+
+.icon{
+  color:white;
+  margin-right: 30px;
+}
+
+#description{
+  color:#A3A3A3;
+}
+
+p{
+  color: #B9BBBF;
+}
+
+h1,h2{
+  margin:0
+}
+
+.containee input[type="radio"] {
+  display: none;
+}
+
+.containee label {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.containee input[type="radio"]:checked + label {
+  
+  border-color: #333;
+  color: #333;
+}
+@media screen and (max-width:480px){
+  
+  .icon{
+    margin-right: 8px;
+    font-size: 12px;
+  }
+  .caa{
+    font-size: 12px;
+  }
+  #count{
+    font-size: 16px;
+  }
+  #left{
+    width:20vw;
+  }
+  #description{
+    font-size: 12px;
+  }
+  .img2{
+    width:15vw;
+    margin-bottom: 8px;
+    
+  }
+  #images-section2{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .radioDiv{
+    font-size:12px;
+    padding: 0;
+  }
+  #message{
+    font-size:10px;
+  }
+}
